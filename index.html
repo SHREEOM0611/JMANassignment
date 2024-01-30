@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
 </head>
 
 <body>
 
 
     <!-- -----------------------Navbar--------------------------- -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <a class="navbarBrand" href="https://jmangroup.com/">
             <img class="brandLogo" src="jmanLogo.png" alt="JMAN Logo">
         </a>
@@ -43,59 +43,59 @@
                         <input class="search-bar" type="text" placeholder="Search" aria-label="Search">
                         <div class="search-icon"> <i class="fas fa-search" aria-hidden="true"></i></div>
                     </form>
-
+                    <div class="dropdown" style="margin:1rem">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="profileImg" src="profileImage.jpeg" alt="Profile Image"> </img>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Account</a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <img class="profileImg" src="profileImage.jpeg" alt="Profile Image"> </img>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Account</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                </ul>
-            </div>
+           
 
         </div>
     </nav>
     <!-- ----------------------------------------------------------------------------- -->
 
-    <div class="dashboard">
+    <div class="row dashboard">
 
         <!-- ----------------------------------------Sidebar ----------------------- -->
-        <div class="sidebar">
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
-               
+        <div class="col-lg-2 col-md-3 col-12 sidebar ">
+            <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" >
+
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active" aria-current="page">
+                        <a href="#" class="nav-link text-white">
                             <svg class="bi me-2" width="16" height="16"></svg>
                             Home
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="#" class="nav-link text-white">
                             <svg class="bi me-2" width="16" height="16"></svg>
                             Dashboard
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="#" class="nav-link text-white">
                             <svg class="bi me-2" width="16" height="16"></svg>
                             Orders
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="#" class="nav-link text-white">
                             <svg class="bi me-2" width="16" height="16"></svg>
                             Products
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="#" class="nav-link text-white">
                             <svg class="bi me-2" width="16" height="16"></svg>
                             Customers
@@ -104,198 +104,231 @@
                 </ul>
                 <hr>
                 <ul class="nav nav-pills flex-column mb-auto">
-                    
-                    <li>
+
+                    <li class="nav-item">
                         <a href="#" class="nav-link text-white">
                             <svg class="bi me-2" width="16" height="16"></svg>
                             Help
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="#" class="nav-link text-white">
                             <svg class="bi me-2" width="16" height="16"></svg>
-                           Logout
+                            Logout
                         </a>
                     </li>
-                   
+
                 </ul>
 
                 <hr>
-                
-                    
-                    
-                        <div class="card-items-sidebar">
-                            <div class="card">
-                                <div class="card-body">
-                                    
-                                    <h6 class="card-subtitle mb-2 text-body-secondary">Found a Bug?</h6>
-                                    <div class="card-text-sidebar">
-                                        
-                                        <a href="#" class="btn btn-primary">Report Now</a>
-                                    </div>
-        
-                                </div>
+
+
+
+                <div class="card-items-sidebar">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Found a Bug?</h6>
+                            <div class="card-text-sidebar">
+
+                                <a href="#" class="btn btn-primary">Report Now</a>
                             </div>
+
                         </div>
-                    
-                
+                    </div>
+                </div>
+
+
             </div>
-            
+
         </div>
         <!-- ------------------------------------------------------------------ -->
-        <div class="content">
+        <div class="col-lg-10 col-md-9 col-12 content">
 
             <!-- finance cards   saving, expenses etc -->
-            <div class="finance-card">
-                <div class="card-items">
+            <div class="col">
+            <div class="row-lg-3 row  finance-card " style="margin:10px;">
+                <div class="card-items col-lg-3 col-md-6 col-12">
                     <div class="card">
                         <div class="card-body">
                             <img src="wallet.png" alt="wallet icon">
                             <h6 class="card-subtitle mb-2 text-body-secondary">Balance</h6>
-                            <div class="card-text">
-                                <p> $592.36</p>
-                                <p class="card-loss">-0.89%</p>
+                            <div class="card-text ">
+                                <p class=""> $592.36</p>
+                                <p class="card-loss ">-0.89%</p>
                             </div>
+                            
 
                         </div>
                     </div>
                 </div>
-                <div class="card-items">
+
+                <div class="card-items col-lg-3 col-md-6 col-12">
                     <div class="card">
                         <div class="card-body">
                             <img class=" card-icons" src="usd-circle.png" alt="income icon">
                             <h6 class="card-subtitle mb-2 text-body-secondary">Income</h6>
-                            <div class="card-text">
-                                <p> $592.36</p>
-                                <p class="card-loss">-0.89%</p>
+                            <div class="card-text ">
+                                <p class=""> $592.36</p>
+                                <p class="card-loss ">-0.89%</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card-items">
+
+                <div class="card-items col-lg-3 col-md-6 col-12">
                     <div class="card">
                         <div class="card-body">
                             <img src="wishlist-star.png" alt="savings icon">
                             <h6 class="card-subtitle mb-2 text-body-secondary">Savings</h6>
-                            <div class="card-text">
-                                <p> $592.36</p>
-                                <p class="card-loss">-0.89%</p>
+                            <div class="card-text ">
+                                <p class=""> $592.36</p>
+                                <p class="card-loss ">-0.89%</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-items">
+                <div class="card-items col-lg-3 col-md-6 col-12">
                     <div class="card">
                         <div class="card-body">
                             <img src="expense.png" alt="expense icon">
                             <h6 class="card-subtitle mb-2 text-body-secondary">Expenses</h6>
-                            <div class="card-text">
-                                <p> $592.36</p>
-                                <p class="card-loss">-0.89%</p>
+                            <div class="card-text ">
+                                
+                                <p class=""> $592.36</p>
+                                <p class="card-loss ">-0.89%</p>
                             </div>
+                            
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="data row-lg-3  row">
+                <div class="detailed-data col-lg-9 col-md-12 col-12">
+                    <div id="graphContainer"></div>
+                </div>
+                <div class="add-data col-lg-3 col-md-12 col-12">
+                    <div class="add-card">
+                        <img src="debitCard.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <div class="card-text row">
+                                <div class="col-lg-6">
+                                    <h6 >Balance </h6>
+                                    <p> $592.36</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h6 >Trade/week </h6>
+                                    <p> $92.36</p>
+                                </div>
+                            </div> 
+                                <a href="#" class="btn btn-primary" style="margin-bottom: 1rem; justify-self: baseline;">+ Add Card Item</a>
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+
+                
+
+            
+<div class="row-lg-3">
+            <h4>Plannings</h4>
+            <div class="charts col-lg row ">
+
+                <div class="plan-card col-lg-2 col-md-5  m-1 col-12 ">
+                    <div class="pie" style="--p:20; "> 20%</div>
+                    <p>Buy a house</p>
+                </div>
+                <div class="plan-card col-lg-2 col-md-5  m-1 col-12 ">
+                    <div class="pie" style="--p:40;--c:darkblue;--b:10px"> 40%</div>
+                    <p>Buy a house</p>
+                </div>
+                <div class="plan-card col-lg-2 col-md-5 m-1 col-12 ">
+                    <div class="pie animate no-round" style="--p:80;--c:orange;"> 80%</div>
+                    <p>Buy a house</p>
+                </div>
+                <div class="plan-card col-lg-2 col-md-5  m-1 col-12 ">
+                    <div class="pie animate" style="--p:90;--c:lightgreen"> 90%</div>
+                    <p>Buy a house</p>
                 </div>
 
 
             </div>
-
-<div class="data">
-    <div class="detailed-data">
-        <div id="graphContainer"></div> 
-        <div class="charts">
-            <div class="pie" style="--p:20"> 20%</div>
-            <div class="pie" style="--p:40;--c:darkblue;--b:10px"> 40%</div>
-            <div class="pie animate no-round" style="--p:80;--c:orange;"> 80%</div>
-            <div class="pie animate" style="--p:90;--c:lightgreen"> 90%</div>
         </div>
         
-       
-    </div>
-    <div class="add-data">
-        <div class="add-card" >
-            <img src="debitCard.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              
-              <div class="card-text">
-                <p> $592.36</p>
-                <p class="card-loss">-0.89%</p>
-            </div>
-              <a href="#" class="btn btn-primary">+ Add Card Item</a>
-            </div>
-          </div>
-    </div>
-
-</div>
-
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
 
         <script>
             anychart.onDocumentReady(function () {
-        
-              // add data
-              var data = [
-                ["2003", 1, 0, 0],
-                ["2004", 4, 0, 0],
-                ["2005", 6, 0, 0],
-                ["2006", 9, 1, 0],
-                ["2007", 12, 2, 0],
-                ["2008", 13, 5, 1],
-                ["2009", 15, 6, 1],
-                ["2010", 16, 9, 1],
-                ["2011", 16, 10, 4],
-                ["2012", 17, 11, 5],
-                ["2013", 17, 13, 6],
-                ["2014", 17, 14, 7],
-                ["2015", 17, 14, 10],
-                ["2016", 17, 14, 12],
-                ["2017", 19, 16, 12],
-                ["2018", 20, 17, 14],
-                ["2019", 20, 19, 16],
-                ["2020", 20, 20, 17],
-                ["2021", 20, 20, 20],
-                ["2022", 20, 22, 20]
-              ];
-        
-              // create a data set
-              var dataSet = anychart.data.set(data);
-      
-              // map the data for all series
-              var firstSeriesData = dataSet.mapAs({x: 0, value: 1});
-              var secondSeriesData = dataSet.mapAs({x: 0, value: 2});
-              var thirdSeriesData = dataSet.mapAs({x: 0, value: 3});
-      
-              // create a line chart
-              var chart = anychart.line();
-      
-              // create the series and name them
-              var firstSeries = chart.line(firstSeriesData);
-              firstSeries.name("Expense");
-              var secondSeries = chart.line(secondSeriesData);
-              secondSeries.name("Income");
-              var thirdSeries = chart.line(thirdSeriesData);
-              thirdSeries.name("Savings");
-      
-              // add a legend
-              chart.legend().enabled(true);
-        
-              // add a title
-              chart.title("Money Flow");
-        
-              // specify where to display the chart
-              chart.container("graphContainer");
-        
-              // draw the resulting chart
-              chart.draw();
-        
+
+                // add data
+                var data = [
+                    ["2003", 1, 0, 0],
+                    ["2004", 4, 0, 0],
+                    ["2005", 6, 0, 0],
+                    ["2006", 9, 1, 0],
+                    ["2007", 12, 2, 0],
+                    ["2008", 13, 5, 1],
+                    ["2009", 15, 6, 1],
+                    ["2010", 16, 9, 1],
+                    ["2011", 16, 10, 4],
+                    ["2012", 17, 11, 5],
+                    ["2013", 17, 13, 6],
+                    ["2014", 17, 14, 7],
+                    ["2015", 17, 14, 10],
+                    ["2016", 17, 14, 12],
+                    ["2017", 19, 16, 12],
+                    ["2018", 20, 17, 14],
+                    ["2019", 20, 19, 16],
+                    ["2020", 20, 20, 17],
+                    ["2021", 20, 20, 20],
+                    ["2022", 20, 22, 20]
+                ];
+
+                // create a data set
+                var dataSet = anychart.data.set(data);
+
+                // map the data for all series
+                var firstSeriesData = dataSet.mapAs({ x: 0, value: 1 });
+                var secondSeriesData = dataSet.mapAs({ x: 0, value: 2 });
+                var thirdSeriesData = dataSet.mapAs({ x: 0, value: 3 });
+
+                // create a line chart
+                var chart = anychart.line();
+
+                // create the series and name them
+                var firstSeries = chart.line(firstSeriesData);
+                firstSeries.name("Expense");
+                var secondSeries = chart.line(secondSeriesData);
+                secondSeries.name("Income");
+                var thirdSeries = chart.line(thirdSeriesData);
+                thirdSeries.name("Savings");
+
+                // add a legend
+                chart.legend().enabled(true);
+
+                // add a title
+                chart.title("Money Flow");
+
+                // specify where to display the chart
+                chart.container("graphContainer");
+
+                // draw the resulting chart
+                chart.draw();
+
             });
-          </script>
+        </script>
 </body>
 
 </html>
