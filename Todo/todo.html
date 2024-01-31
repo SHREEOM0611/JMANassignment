@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My own Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href=
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity=
+    "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+
+    <style>@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+      </style>
+    <script src="todo.js"></script>
+
+
+</head>
+<body style="background: #0E0E0E;">
+    
+        <h1 class="todo-header">ToDo List</h1>
+
+<div class="container">
+    <h2 class="sub-header" style="text-decoration: underline;">Let's Add an Items</h2>
+    <label id="lblsuccess" class="text-white"
+				style="display: none; ">
+		</label>
+		
+
+    <form id="addForm">
+
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-12">
+                <input type="text" id="item" class="addItems " name="addItems" placeholder="Add an Item" onkeyup="toggleButton(this, 'submit')" >
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <button  id="submit" class="submit-button  " type="submit" value="Submit">Submit</button>
+            </div>  
+        </div>
+    </form>
+
+    <h3 class="sub-header" style="margin-top:2rem;">Tasks</h3>
+
+    <form id="addForm">
+        <ul class="list-group row" id="items"></ul>
+    </form>
+
+
+
+
+
+
+
+
+    <!-- <div id="Sure" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+<button type="submit">Login</button>
+           
+          
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('SignIn-form').style.display='none'" class="cancelbtn">Cancel</button>
+            
+          </div>
+        </form>
+      </div>
+
+        
+      <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+  
+        <script>
+          $(document).ready(function() {             
+  $('#loginModal').modal('show');
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  }); -->
+        </script>
+</div> 
+</body>
+</html>
