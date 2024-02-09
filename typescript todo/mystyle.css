@@ -1,0 +1,94 @@
+
+.todo-header{
+    font-family: 'Honk', system-ui;
+    font-size: 135px;
+    text-align: center;
+    margin-top:-2rem;
+}
+
+.sub-header{
+    font-family: 'Honk', system-ui;
+    font-size: 60px;
+}
+
+
+
+.addItems{
+   height:75px;
+    margin-top:1rem;
+    width:100%;
+    border-radius: 2rem;
+    border: 5px solid yellow;
+    padding:20px;
+}
+
+.submit-button{
+    transition: 0.5s ease;
+    justify-content: center;
+    height:70px;
+    font-family: 'Honk', system-ui;
+    font-size: 40px;
+    /* margin-left:2rem; */
+    background:transparent;
+    border:none;
+    padding-top:1.2rem;
+}
+
+.submit-button:hover{
+    
+    font-family: 'Honk', system-ui;
+    font-size: 50px;
+    padding-top:0.5rem;
+}
+
+.task{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:47px;
+    margin-top:0.5rem;
+    width:100%;
+    border-radius: 0.2rem;
+    font-family: 'Honk', system-ui;
+    font-size: 30px;
+    margin-bottom:0.5rem;
+    background:#080808;
+    box-shadow: 0 1px 10px rgb(255 255 255 / 0.8);
+    padding-left: 1rem;
+    align-items: center;
+}
+
+.content input, textarea {
+    background-color:#080808;
+    border: none;
+}
+
+.edit{
+    justify-content: center;
+    font-family: 'Honk', system-ui;
+    background:transparent;
+    border:none;
+    /* margin-bottom:1rem; */
+    padding-left: 1rem;
+    padding-right:1rem;
+    box-shadow: 0 1px 10px rgb(255 255 255 / 0.8);
+}
+
+.delete{
+    justify-content: center;
+    
+    font-family: 'Honk', system-ui;
+    background:transparent;
+    border:none;
+    /* margin-bottom:1rem; */
+    padding-left: 1rem;
+    padding-right:1rem;
+    box-shadow: 0 1px 10px rgb(255 255 255 / 0.8);
+}
+
+
+.addItems::-webkit-input-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color:yellow;
+  }
